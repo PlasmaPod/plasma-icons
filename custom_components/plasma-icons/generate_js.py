@@ -6,7 +6,7 @@ from string import Template
 from xml.dom.minidom import Document, parse
 
 SVG = "svg"
-OUTFILE = join("dist", "plasma-icons.js")
+OUTFILE = join("custom_components", "plasma-icons", "plasma-icons.js")
 
 
 def get_path(dom: Document) -> str:
