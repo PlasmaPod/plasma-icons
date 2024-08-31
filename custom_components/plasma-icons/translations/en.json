@@ -1,9 +1,0 @@
-{
-  "title": "Plasma Icons",
-  "config": {
-    "abort": {
-      "single_instance_allowed": "Only a single configuration of Plasma Icons is allowed."
-    },
-    "step": {}
-  }
-}
