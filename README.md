@@ -9,16 +9,16 @@ Custom icon pack designed for Home Assistant for personal use
 
 | Icon | Name |
 | :--- | :--- |
-| ![plasma:bedroom-1](https://raw.githubusercontent.com/PlasmaPod/plasma-icons/main/docs/svgs/bedroom-1.svg)| Bedroom 1 |
-| ![plasma:bedroom-2](https://raw.githubusercontent.com/PlasmaPod/plasma-icons/main/docs/svgs/bedroom-2.svg)| Bedroom 2 |
-| ![plasma:bedroom-3](https://raw.githubusercontent.com/PlasmaPod/plasma-icons/main/docs/svgs/bedroom-3.svg)| Bedroom 3 |
-| ![plasma:bedroom-4](https://raw.githubusercontent.com/PlasmaPod/plasma-icons/main/docs/svgs/bedroom-4.svg)| Bedroom 4 |
-| ![plasma:bedroom-5](https://raw.githubusercontent.com/PlasmaPod/plasma-icons/main/docs/svgs/bedroom-5.svg)| Bedroom 5 |
-| ![plasma:bedroom-6](https://raw.githubusercontent.com/PlasmaPod/plasma-icons/main/docs/svgs/bedroom-6.svg)| Bedroom 6 |
-| ![plasma:bedroom-7](https://raw.githubusercontent.com/PlasmaPod/plasma-icons/main/docs/svgs/bedroom-7.svg)| Bedroom 7 |
-| ![plasma:bedroom-8](https://raw.githubusercontent.com/PlasmaPod/plasma-icons/main/docs/svgs/bedroom-8.svg)| Bedroom 8 |
-| ![plasma:bedroom-9](https://raw.githubusercontent.com/PlasmaPod/plasma-icons/main/docs/svgs/bedroom-9.svg)| Bedroom 9 |
-| ![plasma:master-bedroom](https://raw.githubusercontent.com/PlasmaPod/plasma-icons/main/docs/svgs/master-bedroom.svg)| Master Bedroom |
+| ![plasma:bedroom-1](https://raw.githubusercontent.com/PlasmaPod/plasma-icons/main/svgs/bedroom-1.svg)| Bedroom 1 |
+| ![plasma:bedroom-2](https://raw.githubusercontent.com/PlasmaPod/plasma-icons/main/svgs/bedroom-2.svg)| Bedroom 2 |
+| ![plasma:bedroom-3](https://raw.githubusercontent.com/PlasmaPod/plasma-icons/main/svgs/bedroom-3.svg)| Bedroom 3 |
+| ![plasma:bedroom-4](https://raw.githubusercontent.com/PlasmaPod/plasma-icons/main/svgs/bedroom-4.svg)| Bedroom 4 |
+| ![plasma:bedroom-5](https://raw.githubusercontent.com/PlasmaPod/plasma-icons/main/svgs/bedroom-5.svg)| Bedroom 5 |
+| ![plasma:bedroom-6](https://raw.githubusercontent.com/PlasmaPod/plasma-icons/main/svgs/bedroom-6.svg)| Bedroom 6 |
+| ![plasma:bedroom-7](https://raw.githubusercontent.com/PlasmaPod/plasma-icons/main/svgs/bedroom-7.svg)| Bedroom 7 |
+| ![plasma:bedroom-8](https://raw.githubusercontent.com/PlasmaPod/plasma-icons/main/svgs/bedroom-8.svg)| Bedroom 8 |
+| ![plasma:bedroom-9](https://raw.githubusercontent.com/PlasmaPod/plasma-icons/main/svgs/bedroom-9.svg)| Bedroom 9 |
+| ![plasma:master-bedroom](https://raw.githubusercontent.com/PlasmaPod/plasma-icons/main/svgs/master-bedroom.svg)| Master Bedroom |
 
 [//]: # (End Custom Icons)
 
