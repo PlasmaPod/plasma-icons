@@ -1,0 +1,11 @@
+{
+    "domain": "plasma-icons",
+    "name": "Plasma Icon Pack",
+    "documentation": "https://github.com/PlasmaPod/plasma-icons",
+    "dependencies": ["frontend", "http"],
+    "codeowners": [],
+    "requirements": [],
+    "config_flow": true,
+    "version": "1.0.0",
+    "iot_class": "local_polling"
+}
