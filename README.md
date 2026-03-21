@@ -1,42 +1,14 @@
 
-[![hacs_badge](https://img.shields.io/badge/HACS-Default-41BDF5.svg)](https://github.com/hacs/integration)
+[![hacs_badge](https://img.shields.io/badge/HACS-Custom-EE7A3B.svg)](https://github.com/hacs/integration)
 [![GitHub release (latest by date)](https://img.shields.io/github/v/release/PlasmaPod/plasma-icons)](https://github.com/PlasmaPod/plasma-icons/releases/latest)
-[![CC BY-NC-SA 4.0][cc-by-nc-sa-shield]][cc-by-nc-sa]
 ![GitHub file size in bytes](https://img.shields.io/github/size/PlasmaPod/plasma-icons/dist/plasma-icons.js?label=plugin%20size)
 ![GitHub last commit](https://img.shields.io/github/last-commit/PlasmaPod/plasma-icons)
 
-[cc-by-nc-sa]: http://creativecommons.org/licenses/by-nc-sa/4.0/
-[cc-by-nc-sa-image]: https://licensebuttons.net/l/by-nc-sa/4.0/88x31.png
-[cc-by-nc-sa-shield]: https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg
+# Plasma Icons
 
-# Custom brand icons
-
-![logo](https://res.cloudinary.com/dcongin7u/image/upload/v1707320837/cbi-logo.jpg)
-
-#### Custom brand icons use the prefix `phu:`
-#### Append Name (of the icon) after `phu:`
-- Example: `phu:eggs` <img src="/icon-svg/eggs.svg" title="Preview" alt="Preview" width="24"/>
-- Example: `phu:chicken` <img src="/icon-svg/chicken.svg" title="Preview" alt="Preview" width="24"/>
-
-# Icon Requests
-
-Want an icon? Open a [custom icon request](https://github.com/PlasmaPod/plasma-icons/issues/new?assignees=PlasmaPod&labels=icon-request&template=insertion-of-new-icons.md&title=Custom+Icon+request) or [contribute to the project](#developer-workflow).
--  Provide a **svg file and jpg logo of your request (we also are not mind readers and dont know every icon globaly so if no name is present please add it or it will be ignored** and a image along with your request.
--  links to SVG's or Images will be ignored, you must upload the files into your request and they must be visible in post. `IGNORING THIS SIMPLE REQUEST WILL RESULT IN YOUR REQUEST BEING IGNORED AND CLOSED`  (if you can not be bothered to spend a few minutes doing this, why should we spend time looking for it and making it).
--  For those who [made their own icons](#developer-workflow), open pull requests on the **[dev branch](https://github.com/PlasmaPod/plasma-icons/pulls)**.
-
-### Make sure to [install](#installation-methods) `custom-brand-icons.js` into `configuration.yaml` or `ui-lovelace.yaml`
-
-![2FA](https://res.cloudinary.com/dcongin7u/image/upload/v1620853194/example_pwvozi.jpg)
-
-## Iconify
-
-All icons are available in the [framework Iconify](https://github.com/iconify). You can use icons using the prefix `cbi`. Anyone who uses this icon set via the framework is reminded to comply with the license. For commercial purposes you can contact us
-
-- For all information  visit the website https://iconify.design
-- For use visit https://iconify.design/docs/usage/
-- Browse Icons  https://icon-sets.iconify.design/cbi/
-
+#### Plasma icons use the prefix `plasma:`
+#### Append Name (of the icon) after `plasma:`
+- Example: `plasma:starlink` <img src="/icon-svg/starlink.svg" title="Preview" alt="Preview" width="24"/>
 
 ## Available Icons
 
@@ -182,28 +154,6 @@ Example svg file below:
      d="..."
     \>
   </svg>
-```
-
-
-###  ( optional ) if you want to generate the icon package locally
-
-> [!WARNING]  
->You need to have Node.js installed to use automatic generation.
-
-Go to the local folder where the `plasma-icons-builder.js` file is located and run `node plasma-icons-builder.js` The script will generate a new `plasma-icons` file with the updated icons.
-
-If everything went well you will see a message like this
-
-```js
-✅ Build completed
-📁 Generated file: dist/plasma-icons.js
-🔢 Total icons: XXXX
-```
-
-(Optional) In case you want to create your own prefix you can edit the last line of the `plasma-icons.js`
-
-```js
-window.customIconsets["yourprefix"] = getIcon;
 ```
 
 ### Normalize script
