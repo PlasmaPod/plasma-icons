@@ -3,7 +3,7 @@
 //   node script/normalize-icons.mjs [<in_dir> <out_dir>] [--clean] [--vrt]
 //
 // Defaults (if <in_dir> and <out_dir> omitted):
-//   in_dir  = custom-brand-icons/icon-svg
+//   in_dir  = plasma-icons/icon-svg
 //   out_dir = in_dir (in-place)
 //
 // Options:
@@ -79,8 +79,8 @@ const FORBIDDEN_ELEMS = new Set([
 
 // -------------------- Repo paths / defaults --------------------
 const __filename = fileURLToPath(import.meta.url);
-const SCRIPT_DIR = path.dirname(__filename);            // .../custom-brand-icons/script
-const REPO_ROOT = path.resolve(SCRIPT_DIR, "..");       // .../custom-brand-icons
+const SCRIPT_DIR = path.dirname(__filename);            // .../plasma-icons/script
+const REPO_ROOT = path.resolve(SCRIPT_DIR, "..");       // .../plasma-icons
 const DEFAULT_ICON_DIR = path.join(REPO_ROOT, "icon-svg");
 const SVGO_CONFIG = path.join(SCRIPT_DIR, "svgo.config.mjs");
 

@@ -1,9 +1,9 @@
 
 [![hacs_badge](https://img.shields.io/badge/HACS-Default-41BDF5.svg)](https://github.com/hacs/integration)
-[![GitHub release (latest by date)](https://img.shields.io/github/v/release/elax46/custom-brand-icons)](https://github.com/elax46/custom-brand-icons/releases/latest)
+[![GitHub release (latest by date)](https://img.shields.io/github/v/release/PlasmaPod/plasma-icons)](https://github.com/PlasmaPod/plasma-icons/releases/latest)
 [![CC BY-NC-SA 4.0][cc-by-nc-sa-shield]][cc-by-nc-sa]
-![GitHub file size in bytes](https://img.shields.io/github/size/elax46/custom-brand-icons/dist/custom-brand-icons.js?label=plugin%20size)
-![GitHub last commit](https://img.shields.io/github/last-commit/elax46/custom-brand-icons)
+![GitHub file size in bytes](https://img.shields.io/github/size/PlasmaPod/plasma-icons/dist/plasma-icons.js?label=plugin%20size)
+![GitHub last commit](https://img.shields.io/github/last-commit/PlasmaPod/plasma-icons)
 
 [cc-by-nc-sa]: http://creativecommons.org/licenses/by-nc-sa/4.0/
 [cc-by-nc-sa-image]: https://licensebuttons.net/l/by-nc-sa/4.0/88x31.png
@@ -20,10 +20,10 @@
 
 # Icon Requests
 
-Want an icon? Open a [custom icon request](https://github.com/elax46/custom-brand-icons/issues/new?assignees=elax46&labels=icon-request&template=insertion-of-new-icons.md&title=Custom+Icon+request) or [contribute to the project](#developer-workflow).
+Want an icon? Open a [custom icon request](https://github.com/PlasmaPod/plasma-icons/issues/new?assignees=PlasmaPod&labels=icon-request&template=insertion-of-new-icons.md&title=Custom+Icon+request) or [contribute to the project](#developer-workflow).
 -  Provide a **svg file and jpg logo of your request (we also are not mind readers and dont know every icon globaly so if no name is present please add it or it will be ignored** and a image along with your request.
 -  links to SVG's or Images will be ignored, you must upload the files into your request and they must be visible in post. `IGNORING THIS SIMPLE REQUEST WILL RESULT IN YOUR REQUEST BEING IGNORED AND CLOSED`  (if you can not be bothered to spend a few minutes doing this, why should we spend time looking for it and making it).
--  For those who [made their own icons](#developer-workflow), open pull requests on the **[dev branch](https://github.com/elax46/custom-brand-icons/pulls)**.
+-  For those who [made their own icons](#developer-workflow), open pull requests on the **[dev branch](https://github.com/PlasmaPod/plasma-icons/pulls)**.
 
 ### Make sure to [install](#installation-methods) `custom-brand-icons.js` into `configuration.yaml` or `ui-lovelace.yaml`
 
@@ -48,7 +48,7 @@ To view all available icons, you can go to the following address. The icon viewe
 #### HACS
 
 We recommend installing Custom brand icons card via [Home Assistant Community Store](https://hacs.xyz)
-[![Open your Home Assistant instance and open a repository inside the Home Assistant Community Store.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=elax46&repository=custom-brand-icons&category=frontend)
+[![Open your Home Assistant instance and open a repository inside the Home Assistant Community Store.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=PlasmaPod&repository=plasma-icons&category=frontend)
 
 After installing through HACS:
 1. Add the following lines to your `configuration.yaml`
@@ -56,7 +56,7 @@ After installing through HACS:
     ```yaml
     frontend:
       extra_module_url:
-        - /local/community/custom-brand-icons/custom-brand-icons.js
+        - /local/community/plasma-icons/plasma-icons.js
     ```
 
 2. (Optional) YAML mode users. Add the following to your lovelace configuration using the Raw Config editor under Configure UI or ui-lovelace.yaml.
@@ -64,22 +64,22 @@ After installing through HACS:
     ```yaml
     resources:
       - type: js
-        url: /local/community/custom-brand-icons/custom-brand-icons.js
+        url: /local/community/plasma-icons/plasma-icons.js
     ```
 
 #### Manual Installation
 
 To add custom repositories please follow [this guide](https://hacs.xyz/docs/faq/custom_repositories/). Set URL to `` and category to `Lovelace`.
 
-1. Download `custom-brand-icons.js` file from the [latest release](/releases/latest).
-2. Copy the `custom-brand-icons.js` file into `<config>/www/` the directory where your `configuration.yaml` resides.
+1. Download `plasma-icons.js` file from the [latest release](/releases/latest).
+2. Copy the `plasma-icons.js` file into `<config>/www/` the directory where your `configuration.yaml` resides.
 
 3. Add the following to the `frontend` section of your `configuration.yaml`
 
     ```yaml
     frontend:
       extra_module_url:
-        - /local/custom-brand-icons.js
+        - /local/plasma-icons.js
     ```
 
 4. (Optional) YAML mode users. Add the following to your lovelace configuration using the Raw Config editor under Configure UI or ui-lovelace.yaml.
@@ -87,7 +87,7 @@ To add custom repositories please follow [this guide](https://hacs.xyz/docs/faq/
     ```yaml
     resources:
       - type: js
-        url: /local/custom-brand-icons.js
+        url: /local/plasma-icons.js
     ```
 
 5. Restart Home Assistant.
@@ -96,48 +96,25 @@ To add custom repositories please follow [this guide](https://hacs.xyz/docs/faq/
 
 # User Manual
 
-#### Custom brand icons use the prefix `phu:`
-#### Append Name (of the icon) after `phu:`
-- Example: `phu:eggs` <img src="/icon-svg/eggs.svg" title="Preview" alt="Preview" width="24"/>
-- Example: `phu:chicken` <img src="/icon-svg/chicken.svg" title="Preview" alt="Preview" width="24"/>
+#### Custom brand icons use the prefix `plasma:`
+#### Append Name (of the icon) after `plasma:`
+- Example: `plasma:starlink` <img src="/icon-svg/starlink.svg" title="Preview" alt="Preview" width="24"/>
 
-Example of custom brand icons a lovelace card:
+Example of plasma icons a lovelace card:
 
 ```yaml
 entities:
-  - entity: light.lampada_entrance
-    icon: 'phu:go'
-    name: Go
-  - entity: light.monitor_2_right
-    icon: 'phu:play'
-    name: play 1
-  - entity: light.monitor_2_left
-    icon: 'phu:play'
-    name: play 2
+  - entity: sensor.starlink_status
+    icon: 'plasma:starlink'
+    name: Starlink Status
 show_header_toggle: false
-title: Custom brand icons
+title: Plasma Icons
 type: entities
 ```
 
 ---
 
 # Don't see the icon?
-
-### Cache issue HomeAssistant 2024.1.1
-
-Some addons (including official) have had some [cache issues since 2024.1.1]([https://](https://github.com/elax46/custom-brand-icons/issues/560)), here are a few work arounds to try
-
-1. first go to settings, dashboard and 3 dots click resorces, add resource
-
-    ```yaml
-    /hacsfiles/custom-brand-icons/custom-brand-icons.js?hacstag=366862031202420
-    ```
-
-2. Add this second resource too
-    ```yaml
-    /local/community/custom-brand-icons/custom-brand-icons.js
-    ```
-
 
 #### Hard Reload (browser cache issue)
 - Reload browser by holding CTRL and pressing F5.
@@ -147,8 +124,8 @@ Some addons (including official) have had some [cache issues since 2024.1.1]([ht
 1. From left sidebar, select on *HACS*.
 2. Select on *Integrations*.
 3. From the top header bar (Integrations, Frontend), select *Frontend*.
-4. Search *custom-brand-icons* on the search bar.
-5. Select *Custom brand icons*.
+4. Search *plasma-icons* on the search bar.
+5. Select *Plasma Icons*.
 6. From the top right, select the 3 vertical dots which opens a dropdown menu.
 7. Select *Redownload*.
 8. **Hard reload** browser.
@@ -159,7 +136,7 @@ Some addons (including official) have had some [cache issues since 2024.1.1]([ht
 3. This should bring you back to /hacs/frontend
 4. From the top right, select the 3 vertical dots which opens a dropdown menu.
 5. Select on *Custom repositories*.
-6. Find *Custom brand icons* and select it.
+6. Find *Plasma Icons* and select it.
 7. On the bottom right, select the big blue *Download* icon.
 8. **Hard reload** browser.
 
@@ -169,17 +146,6 @@ Some addons (including official) have had some [cache issues since 2024.1.1]([ht
 1. Go to [icon viewer](https://elax46.github.io/custom-brand-icons/)
 2. Select all the icons you want to add to your HA instance
 3. Download the js file and install it manually in Home Assistant
-
-
-# Thanks for your support
-
-Thanks, as always, to the precious contribution to [@rchiileea](https://github.com/rchiileea) for the creation of the required icons!
-Do you like these icons? Support the project with a pizza 🍕🍕
-
-[![coffee](https://www.buymeacoffee.com/assets/img/custom_images/black_img.png)](https://www.buymeacoffee.com/elax46)
-
-## StarGazers
-[![Stargazers repo roster for @elax46/custom-brand-icons](https://reporoster.com/stars/elax46/custom-brand-icons)](/stargazers)
 
 ---
 
@@ -224,17 +190,17 @@ Example svg file below:
 > [!WARNING]  
 >You need to have Node.js installed to use automatic generation.
 
-Go to the local folder where the `custom-icons-builder.js` file is located and run `node custom-icons-builder.js` The script will generate a new `custom brand-icons` file with the updated icons.
+Go to the local folder where the `plasma-icons-builder.js` file is located and run `node plasma-icons-builder.js` The script will generate a new `plasma-icons` file with the updated icons.
 
 If everything went well you will see a message like this
 
 ```js
 ✅ Build completed
-📁 Generated file: dist/custom-brand-icons.js
+📁 Generated file: dist/plasma-icons.js
 🔢 Total icons: XXXX
 ```
 
-(Optional) In case you want to create your own prefix you can edit the last line of the `custom-brand-icons.js`
+(Optional) In case you want to create your own prefix you can edit the last line of the `plasma-icons.js`
 
 ```js
 window.customIconsets["yourprefix"] = getIcon;
@@ -257,11 +223,11 @@ Thanks to the work of @SoulSolistice, a `normalize-icons.mjs` has been introduce
 - fill color is fixed to BRAND_FILL, default `#44739e`
 - --clean: svgo --> normalize --> svgo (because normalization expands path data)
 - --vrt: ImageMagick montage ... --> script/vrt.png as "Visual Regression Test"
-- default input/output (when not specified): custom-brand-icons/icon-svg
+- default input/output (when not specified): plasma-icons/icon-svg
 
 
 #### Installation & use:
-* Run `npm i` in `custom-brand-icons` folder to install requirements
+* Run `npm i` in `plasma-icons` folder to install requirements
 * Run `npm run clean:vrt` to clean the current icons (will be overwritten). Also creates `vrt.png` in the `scripts` folder as "Visual Regression Test". This needs ImageMagick installed.
 
 
@@ -269,5 +235,5 @@ Thanks to the work of @SoulSolistice, a `normalize-icons.mjs` has been introduce
 
 ### Contributions and Pull Requests
 
-After adding your svg icon in `icon-svg`. Open pull requests on the **[dev branch](https://github.com/elax46/custom-brand-icons/pulls)**.
+After adding your svg icon in `icon-svg`. Open pull requests on the **[dev branch](https://github.com/PlasmaPod/plasma-icons/pulls)**.
 

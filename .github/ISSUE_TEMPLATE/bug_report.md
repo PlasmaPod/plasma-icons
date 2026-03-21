@@ -1,9 +1,9 @@
 ---
 name: Bug report
-about: Help me improve Custom brand icons
+about: Help me improve Plasma Icons
 title: ''
 labels: bug
-assignees: elax46
+assignees: PlasmaPod
 
 ---
 

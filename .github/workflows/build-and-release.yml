@@ -1,4 +1,4 @@
-name: Build Custom Brand Icons
+name: Build Plasma Icons
 
 on:
   push:
@@ -51,14 +51,14 @@ jobs:
       - name: Build icons
         run: |
           set -e
-          if [ ! -f custom-icons-builder.cjs ]; then
-            echo "❌ custom-icons-builder.cjs not found!"
+          if [ ! -f plasma-icons-builder.cjs ]; then
+            echo "❌ plasma-icons-builder.cjs not found!"
             exit 1
           fi
           echo "🚀 Running builder..."
-          node custom-icons-builder.cjs
-          if [ ! -f dist/custom-brand-icons.js ]; then
-            echo "❌ Build failed: dist/custom-brand-icons.js not generated"
+          node plasma-icons-builder.cjs
+          if [ ! -f dist/plasma-icons.js ]; then
+            echo "❌ Build failed: dist/plasma-icons.js not generated"
             exit 1
           fi
           echo "✅ Build completed successfully"
@@ -83,5 +83,5 @@ jobs:
       - name: Upload dist artifact
         uses: actions/upload-artifact@v4
         with:
-          name: custom-brand-icons-dist
+          name: plasma-icons-dist
           path: dist

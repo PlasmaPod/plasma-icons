@@ -58,5 +58,5 @@ window.customIconsets["yourprefix"] = getIcon;
 
 
 ### Contributions and Pull Requests
-After adding your svg icon in `icon-svg`, modifying `custom-brand-icons.js`, and updating `README.md.`
-Open pull requests on the **[dev branch](https://github.com/elax46/custom-brand-icons/pulls)**.
+After adding your svg icon in `icon-svg`, modifying `plasma-icons.js`, and updating `README.md.`
+Open pull requests on the **[dev branch](https://github.com/PlasmaPod/plasma-icons/pulls)**.
