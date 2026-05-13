@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 25 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:1;">
+    <clipPath id="_clip1">
+        <rect x="5.137" y="5" width="14.726" height="15"/>
+    </clipPath>
+    <g clip-path="url(#_clip1)">
+        <g id="layer1">
+            <g id="g1">
+                <path id="path4" d="M19.742,12.559C19.673,16.556 16.366,19.792 12.405,19.739C8.443,19.687 5.222,16.365 5.257,12.368C5.291,8.37 8.57,5.105 12.531,5.123C16.493,5.14 19.743,8.434 19.743,12.431" style="fill:none;fill-rule:nonzero;stroke:black;stroke-width:0.24px;"/>
+                <path id="path4-4" d="M18.7,13.871C18.641,17.139 15.809,19.785 12.416,19.743C9.022,19.7 6.263,16.983 6.292,13.714C6.322,10.446 9.13,7.776 12.524,7.79C15.917,7.804 18.701,10.498 18.701,13.766" style="fill:none;fill-rule:nonzero;stroke:black;stroke-width:0.24px;"/>
+                <path id="path4-7" d="M17.223,12.576C17.178,15.15 15.02,17.235 12.435,17.201C9.849,17.168 7.747,15.027 7.769,12.453C7.792,9.878 9.932,7.774 12.517,7.785C15.103,7.797 17.224,9.919 17.224,12.494" style="fill:none;fill-rule:nonzero;stroke:black;stroke-width:0.24px;"/>
+                <ellipse id="path5" cx="12.499" cy="7.767" rx="0.357" ry="0.35"/>
+                <ellipse id="path5-1" cx="12.503" cy="12.502" rx="0.495" ry="0.508"/>
+                <ellipse id="path5-2" cx="12.495" cy="19.735" rx="0.251" ry="0.246"/>
+                <g id="starlink">
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
